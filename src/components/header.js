@@ -20,13 +20,11 @@ class Header extends Component {
                   <span className="icon-bar" />
                 </button>
               </div>
-              <div className="cart-box">
-                <a href="cart.html"><i className="fa fa-shopping-basket" /></a>
-              </div>
+              
               <div className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                   <li className="active sub-menu">
-                    <a href="index.html">Home </a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <a href='#'>Home </a><span className="arrow"><i className="fa fa-plus" /></span>
                     
                   </li>
                   

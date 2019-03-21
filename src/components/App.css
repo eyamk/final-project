@@ -2,5 +2,11 @@
   display:flex
 }
 .logo{
-  padding-bottom: 1%;
+  padding-bottom: -15px;
+padding-top: 1%;
+display: flex;
+justify-content: center;
+}
+.collapse{
+  padding-top: 8px;
 }

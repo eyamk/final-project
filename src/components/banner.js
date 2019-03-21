@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class Banner extends Component {
     
     render() { 
@@ -11,15 +12,24 @@ class Banner extends Component {
             <div className="container">
               <h1>THERE IS NO LOVE MORE SINCERE</h1>
               <p>than the love of food.</p>
-              <div className="search-box">	
+              <div className="search-box">
+            <div>
                 <input type="text" placeholder="Search here" />
-                <input type="submit" defaultValue />
+                <input type="submit" value="" />
+                </div>
               </div>
               <div className="learning-btn">
-                <a href="#" className="btn">Make a reservation</a>
+              <select className="btn">
+                 <option  className="btn">Search by region</option> 
+              <option  value="volvo">Tunis</option>
+              <option value="saab">Sousse</option>
+              <option value="mercedes">Monastir</option>
+              <option value="audi">Sfax</option>
+              </select>
               </div>
             </div>
           </div>
+          
         </section>
   
           

@@ -7,7 +7,7 @@ import { Card, CardImg, CardText, CardBody,
 
 
 
-class Restaurantitem extends Component {
+class Moreitem extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -15,23 +15,22 @@ class Restaurantitem extends Component {
   
 
     render() { 
+        // const {item}=this.props
         const {item}=this.props
-        
         console.log(this.props.list)
         return ( 
     
         <div className='contact-item-container'>
-                           
+                            
      <Card>
-     <br/><br/><br/><br/> <br/>
-        <CardImg src={item.image}width="100%" /> 
+        { <CardImg src={item.image}width="100%" /> }
         <CardBody>
           <CardTitle><center><h2>{item.name}</h2></center></CardTitle>
           <CardSubtitle><h4>place : {item.lieu}</h4></CardSubtitle>
-          <CardText><p>{item.paragraphe}</p></CardText>
+           <CardText><p>{item.paragraphe}</p></CardText> 
           <center>
               <a href={item.link}><Button>See restaurant</Button></a></center>
-              <br/><br/><br/><br/>
+              
               
         </CardBody>
       </Card>
@@ -45,4 +44,4 @@ class Restaurantitem extends Component {
 
 
  
-export default Restaurantitem;
+export default Moreitem;

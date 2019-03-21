@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import Restaurantitem from './restaurantitem'
 import { Container, Row, Col } from 'react-grid-system';
+import Seemore from './seemore'
 
 import './App.css'
 
@@ -14,9 +15,10 @@ class RestaurantList extends Component {
           }
     }
     render() { 
-        console.log(this.props.contacts)
+        console.log(this.props.list)
         const {list}=this.props
-        return ( <div className='contact-list-container'>
+        return ( 
+        <div className='contact-list-container'>
        <div className="section-title" id="about">
             <h2>Best Restaurants in tunisia</h2><br/><br/>
           </div>
@@ -28,11 +30,11 @@ class RestaurantList extends Component {
             </Row>
             </Container>
         
-                  
+            <Seemore/>      
                   
         </div>
-        
-        </div> );
+
+        </div>);
     }
 }
 

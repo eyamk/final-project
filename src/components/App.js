@@ -6,7 +6,10 @@ import Aboutus from './aboutus'
 import RestaurantList from './restaurantList';
 import Feedback from './feedback'
 import Footer from './footer'
+import Routes from './routes'
+import {BrowserRouter as Router} from 'react-router-dom'
 import './App.css'
+
 
 
 class App extends Component {
@@ -17,11 +20,11 @@ class App extends Component {
         <Navbar/>
           
         <Header/>
-        <Banner/>
-        <Aboutus/>
-        <RestaurantList/>
-        <Feedback/>
-        <Footer/>
+
+        <Router>
+        <Routes/>
+        </Router>
+         <Footer/> 
       </div>
     );
   }
