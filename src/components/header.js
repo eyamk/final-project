@@ -13,7 +13,7 @@ class Header extends Component {
           <nav id="nav-main">
             <div className="navbar navbar-inverse">
               <div className="navbar-header">
-                <a href="index.html" className="navbar-brand" width="70%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPTW_luVH7iXnntU9BO8LaKDlOglUecrj5nS6JoFX9PCPVgbRDg" width="50%" className="logo" alt /></a>
+                <a href="index.html" className="navbar-brand" width="70%"><img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/122017/ifood-logo_0.png?e11qFgwdNpW6Qgyl.hutj9_AXQWNsJWr&itok=b32xbYVp" width="35%" className="logo" alt /></a>
                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span className="icon-bar" />
                   <span className="icon-bar" />
@@ -24,7 +24,7 @@ class Header extends Component {
               <div className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                   <li className="active sub-menu">
-                    <a href='#'>Home </a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <a href='#'><b>Home</b> </a><span className="arrow"><i className="fa fa-plus" /></span>
                     
                   </li>
                   
@@ -32,7 +32,7 @@ class Header extends Component {
                   
                   <li><a href="#about">About Us</a></li>
                   <li className="sub-menu">
-                    <a href="event.html">Offers</a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <a href="event.html">Event</a><span className="arrow"><i className="fa fa-plus" /></span>
                     <ul>
                       <li><a href="event.html">Event</a></li>
                       <li><a href="event-details.html">Event Details</a></li>
@@ -40,7 +40,7 @@ class Header extends Component {
                     </ul>
                   </li>
                   <li className="sub-menu mega-menu">
-                    <a href="forums.html">Our partners</a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <a href="forums.html">Partners with us</a><span className="arrow"><i className="fa fa-plus" /></span>
                     
                   </li>
                   <li><a href="contact-us.html">Contact Us </a></li>
@@ -50,7 +50,7 @@ class Header extends Component {
           </nav>
         </div>
       </header>
-      {/* <img src="https://wpblink.com/sites/default/files/wallpaper/food/68857/meal-wallpapers-hd-68857-9548098.png" alt /> */}
+       
       </div>
 
 

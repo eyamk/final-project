@@ -21,10 +21,10 @@ class Banner extends Component {
               <div className="learning-btn">
               <select className="btn">
                  <option  className="btn">Search by region</option> 
-              <option  value="volvo">Tunis</option>
-              <option value="saab">Sousse</option>
-              <option value="mercedes">Monastir</option>
-              <option value="audi">Sfax</option>
+              <option  value="Tunis">Tunis</option>
+              <option value="Sousse">Sousse</option>
+              <option value="Monastir">Monastir</option>
+              <option value="Sfax">Sfax</option>
               </select>
               </div>
             </div>

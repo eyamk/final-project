@@ -225,7 +225,7 @@ input[type="text"]:focus {border:none; outline:none; }
 .our-course .course-box .comment-row .enroll-btn {float:right; }
 .our-course .course-box .comment-row .enroll-btn .btn {line-height:34px; padding:0 18px; font-size:16px;}
 
-.preparation {background:url(../images/parallax/preparation-bg.jpg) no-repeat 50% 50%; background-size:cover; padding:55px 0; background-attachment:fixed;}
+.preparation {background:url("https://www.treebo.com/blog/wp-content/uploads/2018/05/15-Restaurants-for-a-Candle-Light-Dinner-in-Hyderabad.jpg") no-repeat 50% 50%; background-size:cover; padding:55px 0; background-attachment:fixed;}
 .preparation .preparation-view {padding:92px 0 42px 0;}
 .preparation .preparation-view .item {position:relative; padding:0 0 0 79px; }
 .preparation .preparation-view .item .icon {position:absolute; top:0px; left:0px; }

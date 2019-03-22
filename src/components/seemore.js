@@ -20,7 +20,7 @@ class Seemore extends Component {
         return (<div>
 
 <br/><br/>
-<center><h4><Link to='/morelist'>..See More </Link></h4></center>
+<center><h4><Link to='/morelist'><b><h3>..See More</h3></b> </Link></h4></center>
 <br/><br/>
         </div>);
     }
