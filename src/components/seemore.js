@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-import {connect} from 'react-redux'
-import Restaurantitem from './restaurantitem'
-import { Container, Row, Col } from 'react-grid-system';
 
 import './App.css'
 

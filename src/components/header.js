@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import './App.css'
 
 class Header extends Component {
@@ -24,7 +25,7 @@ class Header extends Component {
               <div className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                   <li className="active sub-menu">
-                    <a href='#'><b>Home</b> </a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <Link to='/'>Home </Link><span className="arrow"><i className="fa fa-plus" /></span>
                     
                   </li>
                   
@@ -40,10 +41,10 @@ class Header extends Component {
                     </ul>
                   </li>
                   <li className="sub-menu mega-menu">
-                    <a href="forums.html">Partners with us</a><span className="arrow"><i className="fa fa-plus" /></span>
+                    <a href="#partners">Partners with us</a><span className="arrow"><i className="fa fa-plus" /></span>
                     
                   </li>
-                  <li><a href="contact-us.html">Contact Us </a></li>
+                  <li><Link to='/contact'>Contact Us </Link></li>
                 </ul>
               </div>
             </div>

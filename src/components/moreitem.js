@@ -29,7 +29,7 @@ class Moreitem extends Component {
           <CardSubtitle><h4>place : {item.lieu}</h4></CardSubtitle>
            <CardText><p>{item.paragraphe}</p></CardText> 
           <center>
-              <a href={item.link}><Button>See restaurant</Button></a></center>
+              <a href={item.link}><Button>CONSULTING</Button></a></center>
               
               
         </CardBody>

@@ -10,3 +10,14 @@ justify-content: center;
 .collapse{
   padding-top: 8px;
 }
+.search{
+  display: flex;
+  border :1px solid rgba(0, 195, 255, 0.897);
+}
+.search-region{
+  padding-right: 145px;
+  padding-bottom: 62px;
+}
+.region{
+  margin-left: 90px;
+}

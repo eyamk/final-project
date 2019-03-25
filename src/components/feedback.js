@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 class Feedback extends Component {
     render() {
       return (
@@ -29,7 +29,7 @@ class Feedback extends Component {
               </div>
             </div>
             <div className="more-stories">
-              <a href="#" className="btn">More guests Stories</a>
+              <Link to='/morefeedback' className="btn">More guests Stories</Link>
             </div>
           </div>
         </section>

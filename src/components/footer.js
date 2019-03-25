@@ -12,7 +12,7 @@ class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-md-3">
-                <h5>Popular Courses</h5>
+                <h5>Popular </h5>
                 <div className="course-slide">
                   <div className="img"><img src="images/blog/post-img1.jpg" alt /></div>
                   <p><a href="courses-list.html">when an unknown printer took </a></p>
@@ -37,7 +37,7 @@ class Footer extends Component {
                       <li><a href="#about">About Us</a></li>
                       <li><a href="#">Contact</a></li>
                       <li><a href="#">Partners</a></li>
-                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Event</a></li>
                       
                     </ul>	
                   </div>
@@ -97,6 +97,9 @@ class Footer extends Component {
             </div>
           </div>
         </div>
+        <div className="top-arrow" id="goTop" style={{display: 'block'}}>
+        <div className="arrow"><i className="fa fa-angle-up" /></div>
+      </div>
       </footer>
 
       

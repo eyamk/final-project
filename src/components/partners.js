@@ -6,10 +6,11 @@ class Partners extends Component {
     render() { 
         
         return ( <div>
-            <div className="section-title" id="about">
+            <div className="section-title" id="partners">
         <br/><br/>
             <h2>Partners with us</h2><br/><br/>
           </div>
+          <section className="breadcrumb">
 <Container>
     <Row>
         <Col sm={2}>
@@ -53,7 +54,7 @@ class Partners extends Component {
         </Col>
     </Row>
     </Container>
-
+</section>
 <br/><br/><br/>
             
             </div>

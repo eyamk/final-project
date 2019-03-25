@@ -20,7 +20,7 @@ class Staticlist extends Component {
         <div className='contact-item-container'>
            
         <Container>
-        <div className="section-title" id="about">
+        <div className="section-title">
         <br/><br/>
             <h2>Best Restaurants in tunisia</h2><br/><br/>
           </div>

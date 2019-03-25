@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {Link} from 'react-router-dom'
 class Navbar extends Component {
     
     render() { 
@@ -12,7 +12,7 @@ class Navbar extends Component {
           <div className="contact-no"><a href="#"><i className="fa fa-phone" />+299 97 39 82</a></div>
           <div className="contact-no"><a href="#"><i className="fa fa-globe" />ifood.com</a></div>
           <div className="quck-right">
-            <div className="right-link"><a href="login-register.html"><i className="fa  fa-user" />Login \ Register</a></div>
+            <div className="right-link"><Link to ='/user'><i className="fa  fa-user" />Login \ Register</Link></div>
           </div>
         </div>
       </div>

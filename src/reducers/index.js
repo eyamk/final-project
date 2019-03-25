@@ -1,4 +1,4 @@
 import {combineReducers} from 'redux'
 import restaurantReducer from './restaurantReducer'
-
-export default combineReducers({restaurantReducer})
+import onedayofferReducer from './onedayofferReducer'
+export default combineReducers({restaurantReducer,onedayofferReducer})
