@@ -18,7 +18,7 @@ class Indoor  extends Component {
       
             
 <div> <Container>
-              <div className="wapper">
+              <div className="wapper" >
               <section className="banner style2">
 <div>
                     <div className="left-slider">

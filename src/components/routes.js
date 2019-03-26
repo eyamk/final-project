@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom'
-import Banner from './banner'
-import Aboutus from './aboutus'
-import Feedback from './feedback'
-import App from './App'
-import Staticlist from './staticlist'
+
 import Restaurantlistbox from './restaurantlistbox'
-import Partners  from './partners'
 import Morefeedback from './morefeedback'
 import Navbar from './mynav'
-import Header from './header'
+
 import Footer from './footer'
 import User from './user'
 import Homepage from './homepage'
@@ -19,7 +14,7 @@ import Event from './event'
 import Discover from './discover';
 import Indoor from './indoor';
 import Introduction from './introduction';
-import Galery from './galery';
+
 import Foodintro from './foodintro'
  import Listoccasion from './listeoccasion'
  import Listfood from './listefood';
@@ -37,6 +32,13 @@ import Offerheader from './offerheader'
 import Offerbanner from './offerbanner'
 import Onedayoffer from './onedayoffer';
 import Dailyoffer from './dailyoffer';
+
+import InterfaceUser from './interfaceuser'
+import Admin from './admin'
+import  Adminresto from './adminresto'
+import  Adminoffer from './adminoffer'
+
+
 class Routes extends Component {
     
     render() { 
@@ -82,6 +84,12 @@ class Routes extends Component {
 
                   <Route exact path='/offer' component={Footer}/> 
                 
+                  <Route exact path='/interface' component={InterfaceUser}/>
+
+                  <Route exact path='/admin' component={Admin}/>
+
+<Route exact path='/admin/adminresto' component={Adminresto}/>
+<Route exact path='/admin/adminoffer' component={Adminoffer}/>
 
         </div> );
     }

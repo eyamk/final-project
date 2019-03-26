@@ -32,13 +32,15 @@ class Header extends Component {
                   
                   
                   <li><a href="#about">About Us</a></li>
+                  <li><Link to='/offer'> <span>Offers</span></Link></li>
+
                   <li className="sub-menu">
-                    <a href="event.html">Event</a><span className="arrow"><i className="fa fa-plus" /></span>
-                    <ul>
+                    <Link to='/event'>Event</Link><span className="arrow"><i className="fa fa-plus" /></span>
+                    {/* <ul>
                       <li><a href="event.html">Event</a></li>
                       <li><a href="event-details.html">Event Details</a></li>
                       <li><a href="event-details2.html">Event Details2</a></li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="sub-menu mega-menu">
                     <a href="#partners">Partners with us</a><span className="arrow"><i className="fa fa-plus" /></span>

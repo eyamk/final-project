@@ -17,7 +17,7 @@ class Foodintro extends Component {
       <div className='contact-item-container'>
            <center> 
      
-        <div className="section-title" id="">
+        <div className="section-title" id="special-menu">
         <br/><br/>   <h2>I-FOOD MENU SPECIAL EVENT</h2><br/><br/>
         </div>
    

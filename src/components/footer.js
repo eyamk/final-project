@@ -12,20 +12,21 @@ class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-md-3">
-                <h5>Popular </h5>
+                <h5>Daily offers </h5>
                 <div className="course-slide">
-                  <div className="img"><img src="images/blog/post-img1.jpg" alt /></div>
-                  <p><a href="courses-list.html">when an unknown printer took </a></p>
-                  <div className="price">$55</div>
-                </div>
-                <div className="course-slide">
-                  <div className="img"><img src="images/blog/post-img2.jpg" alt /></div>
-                  <p><a href="courses-list-sideBar.html">when an unknown printer took </a></p>
+                  <div className="img"><img src="images/promo20.jpg" alt /></div>
+                  <p><a href="courses-list-sideBar.html">FIVE STAR OFFER </a></p>
                   <div className="price">$505</div>
                 </div>
                 <div className="course-slide">
-                  <div className="img"><img src="images/blog/post-img3.jpg" alt /></div>
-                  <p><a href="courses-list.html">when an unknown printer took </a></p>
+                  <div className="img"><img src="images/promo30.png" alt /></div>
+                  <p><a href="courses-list.html">APPY HOUR OFFER </a></p>
+                  <div className="price">$55</div>
+                </div>
+                
+                <div className="course-slide">
+                  <div className="img"><img src="images/promo40.png" alt /></div>
+                  <p><a href="courses-list.html">GOLDEN OFFER </a></p>
                   <div className="price">$178</div>
                 </div>
               </div>
@@ -44,11 +45,10 @@ class Footer extends Component {
                   <div className="col-md-offset-1 col-sm-6 col-md-5 col-xs-6">
                     <h5>Links</h5>
                     <ul className="footer-link">
-                      <li><a href="courses-list.html">Courses List</a></li>
-                      <li><a href="price-plan.html">Pricing Table</a></li>
-                      <li><a href="instructors.html">Instructors</a></li>
-                      <li><a href="forums.html">Forums</a></li>
-                      <li><a href="faq.html">Faq</a></li>
+                      <li><a href="courses-list.html">Indoor/Outdoor</a></li>
+                      <li><a href="price-plan.html">special menu</a></li>
+                      <li><a href="instructors.html">Gallery</a></li>
+                  
                     </ul>	
                   </div>
                 </div>
@@ -57,13 +57,13 @@ class Footer extends Component {
                 <h5>Contact Us</h5>
                 <div className="contact-view">
                   <div className="contact-slide">
-                    <p><i className="fa fa-location-arrow" />76 Woodland Ave. Sherman Drive  <br />Fort Walton Beach,Harlingen</p>
+                    
                   </div>
                   <div className="contact-slide">
-                    <p><i className="fa fa-phone" />+299 97 39 82</p>
+                    <p><i className="fa fa-phone" />+216 53 27 25 14</p>
                   </div>
                   <div className="contact-slide">
-                    <p><i className="fa fa-fax" />(08) 8971 7450</p>
+                    <p><i className="fa fa-fax" />(73) 527 462</p>
                   </div>
                   <div className="contact-slide">
                     <p><i className="fa fa-envelope" /><a href="mailTo:academy@info.com">ifood@info.com</a></p>
@@ -77,7 +77,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-sm-8">
               <div className="copy-right">
-                <p>Copyright © <span className="year">2016</span> Academy.</p>
+                <p>Copyright © <span className="year">2017</span>ifood.</p>
                 <ul className="footer-link">
                   <li><a href="#">Terms and Conditions</a></li>
                   <li><a href="#">Privacy</a></li>
@@ -100,6 +100,9 @@ class Footer extends Component {
         <div className="top-arrow" id="goTop" style={{display: 'block'}}>
         <div className="arrow"><i className="fa fa-angle-up" /></div>
       </div>
+
+
+      
       </footer>
 
       

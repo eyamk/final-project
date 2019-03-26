@@ -21,3 +21,77 @@ justify-content: center;
 .region{
   margin-left: 90px;
 }
+.myimg{
+  width:100%;
+}
+
+.gal{
+  height: 300px !important;
+  width: 100% !important;
+}
+.btn{
+  margin-top: -8px !important;
+
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+.adminimage{
+  height: 40px;
+ /* margin: 5%  */
+}
+
+/* .admininfo{
+  display: flex;
+justify-content: space-between
+    /* align-content: space-between; */
+
+#listoffer{
+  margin-top: 5%
+}
+#lisrest{
+  margin-top: 5% ;
+  margin-bottom: 10%
+}
+
+/* #addbtn {
+  margin-top: 30% !important ; }
+
+    .enroll-btn{
+      padding-bottom: 50px !important;
+      margin-top: -9%;
+      
+    } 
+
+.del{ margin-left: -30%;
+  padding-bottom: 50px !important;
+  margin-top: -9%;
+  } */
+   
+.input-box{
+  height: 100% ;
+  border: 1px solid rgba(120,130,140,.13) ;
+  background-color:  rgba(120,130,140,.13) ;
+}
+
+
+.adminbar {
+  background-color: #02cbf7;
+  color: white ;
+  margin-bottom: 3% ;
+  padding-top:2% ;
+  padding-bottom :2%
+}
+/* 
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+} */

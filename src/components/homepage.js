@@ -14,6 +14,8 @@ import Footer from './footer'
 
 
 
+
+
 class Homepage extends Component {   
 render() { 
     return ( <div className='routes-container'>
@@ -26,7 +28,7 @@ render() {
              <Route exact path='/' component={Aboutus}/>
              <Route exact path='/' component={Feedback}/>
              <Route exact path='/' component={Partners }/>
-           
+            
              <Route exact path='/' component={Footer}/>
              
 

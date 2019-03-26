@@ -12,10 +12,10 @@ class Discover  extends Component {
     
   render() { 
       
-      return (  <div>
+      return (  <div >
         <center>
   
-     <div className="section-title" id="">
+     <div className="section-title" id="in-out" >
      <br/><br/>  <h2>InDoor/OutDoor  Venue</h2><br/><br/></div></center>
      
         <div className='contact-list-container'>
