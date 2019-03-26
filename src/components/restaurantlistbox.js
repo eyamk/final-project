@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import { Container, Row, Col } from 'react-grid-system';
 import Restaurantitembox from './restaurantitembox'
-
+import Header from './header'
 
 
 import './App.css'
@@ -34,15 +34,10 @@ class Restaurantlistbox extends Component {
 
         return ( 
         <div>
-
+<Header/>
+<br/><br/><br/><br/>
 <section className="login-view">
-<section className="breadcrumb">
-        <div className="container">
-          <ul>
-            <li><Link to='/'>Home</Link></li> 
-          </ul>
-        </div>
-      </section>
+
       <br/>
       <Container>
           

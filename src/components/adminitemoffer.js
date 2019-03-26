@@ -24,38 +24,49 @@ class Adminitemoffer extends Component {
       <br/>
     <Col sm={2}>
             <div className="input-box">
-              <p>{item.rest} </p>
+            <input type='text' name='name' value={item.rest} />
+
+              {/* <p>{item.rest} </p> */}
             </div> 
     </Col>
     <Col sm={2}>
     <div className="input-box">
-              <p>{item.im}</p>
+              {/* <p>{item.im}</p> */}
+              <input type='text' name='name' value={item.im} />
+
 
             </div> 
     </Col>
     <Col sm={2}>
     <div className="input-box">
-              <p>{item.date}</p>
+              {/* <p>{item.date}</p> */}
+              <input type='text' name='name' value={item.date} />
+
 
             </div> 
    </Col>
    <Col sm={2}>
    <div className="input-box">
-              <p>{item.price}</p>
+              {/* <p>{item.price}</p> */}
+              <input type='text' name='name' value={item.price} />
+
 
             </div> 
            
     </Col> 
     <Col sm={2}>
     <div className="input-box">
-              <p>{item.val}</p>
+              {/* <p>{item.val}</p> */}
+              <input type='text' name='name' value={item.val} />
 
             </div> 
          
     </Col>  
     <Col sm={2}>
     <div className="input-box">
-              <p>{item._id}</p>
+              {/* <p>{item._id}</p> */}
+              <input type='text' name='name' value={item._id} />
+
             </div> 
          
     </Col>  

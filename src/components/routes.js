@@ -38,6 +38,11 @@ import Admin from './admin'
 import  Adminresto from './adminresto'
 import  Adminoffer from './adminoffer'
 
+import RestaurantAdmin from './RestaurantAdmin'
+import RestaurantListAdmin  from './restaurant-list-admin'
+import Addrestaurant from './Addrestaurant'
+import Editrestaurant from './editrestaurant'
+
 
 class Routes extends Component {
     
@@ -55,7 +60,7 @@ class Routes extends Component {
                  
                  
 
-<Route exact path='/event' component={Event}/>
+               <Route exact path='/event' component={Event}/>
                  <Route exact path='/event' component={Navbar}/>
                 <Route exact path='/event' component={Eventheader}/>
 
@@ -90,6 +95,13 @@ class Routes extends Component {
 
 <Route exact path='/admin/adminresto' component={Adminresto}/>
 <Route exact path='/admin/adminoffer' component={Adminoffer}/>
+
+
+
+<Route exact path='/restaurantadmin' component={RestaurantAdmin}/>   
+                 <Route exact path='/restaurantlist' component={RestaurantListAdmin }/>
+                 <Route exact path='/addContact' component={Addrestaurant}/>
+                 <Route exact path='/editContact/:_id' render={(props)=><Editrestaurant _id={props.match.params._id}/>} />
 
         </div> );
     }

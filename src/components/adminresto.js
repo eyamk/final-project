@@ -34,12 +34,11 @@ class Adminresto extends Component {
 </div>    
 <Container>
     
-            <div className="navbar navbar-inverse">
-              {/* <div className="navbar-header">
-                <a href="#" className="navbar-brand" width="70%"><img src="images/admin.jpg" width="30%" className="logo" alt /></a>
-              </div> */}
+<div className="navbar navbar-inverse">
               
-              <div className="navbar-collapse collapse">
+
+
+            <div className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
                  
                   
@@ -79,8 +78,73 @@ class Adminresto extends Component {
             </div>
             </Container>
 
+            <div className="section-title" id="listrest">
+          <h2>Add a Restaurant </h2><br/><br/>
+
+                                    <div>
+                                      <Container>   
+                                        <Row>  
+                                            <br/>
+                                          <Col sm={2}>
+                                                  <div className="input-box">
+                                                  <input type='text' name='name'/>
+
+                                                  </div> 
+                                          </Col>
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                                <input type='text' name='name'/>
+                                          </div> 
+                                          </Col>
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name' />
+                                                  </div> 
+                                        </Col>
+                                        <Col sm={2}>
+                                        <div className="input-box">
+                                        <input type='text' name='name' />
 
 
+                                                  </div> 
+                                                
+                                          </Col> 
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name'  />
+
+
+                                                  </div> 
+                                              
+                                          </Col>  
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name'  />
+
+                                                  </div> 
+                                              
+                                          </Col>  
+                                          </Row>
+                                        <Row>
+                                          <Col sm={1}>
+                                          <div className="enroll-btn"><br/>	
+                                                      <a href="#" className="btn">Edit</a>
+                                                    </div>
+                                          </Col>   
+                                          <Col sm={1}>
+                                          <div className="enroll-btn"   className ="del"><br/>	
+                                                      <a href="#" className="btn">Delete</a>
+                                                    </div>
+                                          </Col>  
+                                          <br/>
+                                          </Row>    
+                                          <br/> <br/> <br/> <br/>
+                                        </Container>   
+                                              </div>
+
+
+
+        </div>
 
         <div className="section-title" id="listrest">
           <h2>Restaurants List</h2>

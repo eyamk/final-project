@@ -21,10 +21,7 @@ class Partners extends Component {
         
         return ( <div>
             <br/><br/>
-            <div className="section-title" id="partners">
-        <br/><br/>
-            <h2>Partners with us</h2><br/><br/>
-          </div>
+           
           <section className="breadcrumb">
 
 

@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import Header from './header'
+
 class Morefeedback extends Component {
     
     render() { 
         
         return (
 
-            
+            <div><Header/>
+            <br/><br/><br/><br/><br/><br/>
             <section className="our-team">
-            <section className="breadcrumb">
-        <div className="container">
-          <ul>
-            <li><Link to='/'>Home</Link></li> 
-          </ul>
-        </div>
-      </section>
+            
             <div className="section-title">
               <h2>Guests opinion</h2>
             </div>
@@ -69,7 +66,7 @@ class Morefeedback extends Component {
               </div>
             </div>
           </section>
-    
+          </div>
             );
         }
     }

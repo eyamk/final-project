@@ -20,6 +20,7 @@ class MoreList extends Component {
         const {list}=this.props
         return ( 
         <div>
+          
             <div className='contact-list-container'>
        
         <div className='contact-list-container1'>

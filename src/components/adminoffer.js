@@ -16,6 +16,7 @@ class Adminoffer extends Component {
     }
   
 
+
     render() { 
       
       console.log(this.props.restaurants)
@@ -35,9 +36,7 @@ class Adminoffer extends Component {
 <Container>
     
             <div className="navbar navbar-inverse">
-              {/* <div className="navbar-header">
-                <a href="#" className="navbar-brand" width="70%"><img src="images/admin.jpg" width="30%" className="logo" alt /></a>
-              </div> */}
+             
               
               <div className="navbar-collapse collapse">
                 <ul className="nav navbar-nav">
@@ -77,6 +76,74 @@ class Adminoffer extends Component {
               </div>
             </div>
             </Container>
+
+
+            <div className="section-title" id="listrest">
+          <h2>Add an offer </h2><br/><br/>
+
+                                    <div>
+                                      <Container>   
+                                        <Row>  
+                                            <br/>
+                                          <Col sm={2}>
+                                                  <div className="input-box">
+                                                  <input type='text' name='name'/>
+
+                                                  </div> 
+                                          </Col>
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                                <input type='text' name='name'/>
+                                          </div> 
+                                          </Col>
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name' />
+                                                  </div> 
+                                        </Col>
+                                        <Col sm={2}>
+                                        <div className="input-box">
+                                        <input type='text' name='name' />
+
+
+                                                  </div> 
+                                                
+                                          </Col> 
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name'  />
+
+
+                                                  </div> 
+                                              
+                                          </Col>  
+                                          <Col sm={2}>
+                                          <div className="input-box">
+                                          <input type='text' name='name'  />
+
+                                                  </div> 
+                                              
+                                          </Col>  
+                                          </Row>
+                                        <Row>
+                                          <Col sm={1}>
+                                          <div className="enroll-btn"><br/>	
+                                                      <a href="#" className="btn">Edit</a>
+                                                    </div>
+                                          </Col>   
+                                          <Col sm={1}>
+                                          <div className="enroll-btn"   className ="del"><br/>	
+                                                      <a href="#" className="btn">Delete</a>
+                                                    </div>
+                                          </Col>  
+                                          <br/>
+                                          </Row>    
+                                          <br/> <br/> <br/> <br/>
+                                        </Container>   
+                                              </div> </div>
+
+
+
 
 
 

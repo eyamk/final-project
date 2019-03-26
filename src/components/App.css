@@ -10,17 +10,17 @@ justify-content: center;
 .collapse{
   padding-top: 8px;
 }
-.search{
+/* .search{
   display: flex;
   border :1px solid rgba(0, 195, 255, 0.897);
-}
-.search-region{
+} */
+/* .search-region{
   padding-right: 145px;
   padding-bottom: 62px;
-}
-.region{
+} */
+ .region{
   margin-left: 90px;
-}
+} 
 .myimg{
   width:100%;
 }
@@ -74,8 +74,8 @@ justify-content: space-between
    
 .input-box{
   height: 100% ;
-  border: 1px solid rgba(120,130,140,.13) ;
-  background-color:  rgba(120,130,140,.13) ;
+  /* border: 1px solid rgba(120,130,140,.13) ;
+  background-color:  rgba(120,130,140,.13) ; */
 }
 
 
