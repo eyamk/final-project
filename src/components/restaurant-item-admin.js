@@ -3,10 +3,23 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
+    import axios from 'axios'
+
+
 class RestaurantItemAdmin extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
+    }
+
+
+
+
+    deleteContact=()=>
+    {  const {item} = this.props
+    axios.delete(`/delete-contact/${item._id}`)   
+  .then(()=>this.props.deleteReducer(item._id)) 
+  .catch((err)=>alert(err)) 
     }
   
     
@@ -14,28 +27,22 @@ class RestaurantItemAdmin extends Component {
         const {item}=this.props
         console.log(this.props.contacts)
         return ( <div className='contact-item-container'>
-                    {/* <h2>Name : {item.name}</h2>
-                     <img src={item.image} width="100%"/>
-                    <h3>lieu : {item.lieu}</h3>
-                    <h3>link :{item.link}</h3>
-                    <Link to={`/editContact/${item._id}`}>
-                    <button >Edit </button>
-                    </Link>
-                    <button onClick={()=>this.props.deleteReducer(item._id)}>Delete </button> */}
+                    
 
 <Card>
      <CardImg    src= {item.image} width="100%"  /> 
          <CardBody>
           <CardTitle><center><h2>{item.name}</h2></center></CardTitle>
           <CardSubtitle><h4><center>{item.lieu}</center></h4></CardSubtitle> 
+          <CardSubtitle><h4><center>{item.paragraphe}</center></h4></CardSubtitle> 
           <center>
               <a href={item.link} ><Button>Consulting</Button></a></center>   
         </CardBody>
         <br/><br/>
        <center> <Link to={`/editContact/${item._id}`}>
-                    <button >Edit </button>
+                    <button className="btn" >Edit </button>
                     </Link>
-                    <button onClick={()=>this.props.deleteReducer(item._id)}>Delete </button></center>
+                    <button className="btn" onClick={this.deleteContact}>Delete </button></center>
       </Card>
         </div> );
     }

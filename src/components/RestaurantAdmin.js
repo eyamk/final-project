@@ -6,16 +6,20 @@ class RestaurantAdmin extends Component {
         this.state = {  }
     }
     render() { 
-        return ( <div className='home-container'>
-                 <center><h2>restaurant</h2>
+        return ( <div className="bgadmin">
+        <div className='home-container'>
+                 <center><h2>restaurant</h2><br/><br/><br/><br/><br/>
                  <Link to='/restaurantlist'>
-                 <button>restaurant List</button>
+                 <button className="btn">restaurant List</button>
                  </Link>
                  <Link to='/addContact'>
-                 <button>Add restaurant</button>
+                 <button className="btn">Add restaurant</button>
                  </Link></center>
+     
+        </div>
         </div> );
     }
+    
 }
  
 export default RestaurantAdmin;
