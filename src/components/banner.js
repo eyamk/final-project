@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import axios from 'axios'
+
+
+
 class Banner extends Component {
     
   constructor(props) {
@@ -17,13 +21,17 @@ class Banner extends Component {
         keyword:event.target.value
     });
     
-     this.props.searchReducer(this.state.keyword) 
+    axios.get('/get-contact').then(() =>this.props.searchReducer(this.state.keyword))
+    .catch((err)=>alert(err))
 }
   handlesubmit=()=>{
-    this.props.searchReducer(this.state.keyword)
+    axios.get('/get-contact').then (()=>this.props.searchReducer(this.state.keyword))
+    .catch((err)=>alert(err))
     console.log(this.state.keyword)
   }
 
+  
+  
 
     render() { 
         
@@ -81,6 +89,8 @@ const mapStateToProps=(state)=>
 
 
          }
+         
+
      }
 }
 

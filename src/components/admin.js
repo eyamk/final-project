@@ -41,7 +41,7 @@ class Admin extends Component {
 
 
         <div className="section-title" id="listrest">
-        <Link to='/admin/adminoffer'>  <br/><h2>Offers List</h2></Link>
+        <Link to='offeradmin'>  <br/><h2>Offers List</h2></Link>
 
         </div>
         <br/><br/><br/>

@@ -42,7 +42,11 @@ import RestaurantAdmin from './RestaurantAdmin'
 import RestaurantListAdmin  from './restaurant-list-admin'
 import Addrestaurant from './Addrestaurant'
 import Editrestaurant from './editrestaurant'
+import OfferAdmin from './OfferAdmin'
+import OfferListAdmin from './OfferListAdmin'
+import AddOffer from './AddOffer';
 
+import EditOffer from './EditOffer'
 
 class Routes extends Component {
     
@@ -100,8 +104,18 @@ class Routes extends Component {
 
 <Route exact path='/restaurantadmin' component={RestaurantAdmin}/>   
                  <Route exact path='/restaurantlist' component={RestaurantListAdmin }/>
-                 <Route exact path='/addContact' component={Addrestaurant}/>
+                 <Route exact path='/addrestaurant' component={Addrestaurant}/>
                  <Route exact path='/editContact/:_id' render={(props)=><Editrestaurant _id={props.match.params._id}/>} />
+
+
+
+
+
+                 <Route exact path='/offeradmin' component={OfferAdmin}/>
+                 <Route exact path='/offerlist' component={OfferListAdmin }/>
+                 <Route exac path='/addoffer' component={AddOffer}/>
+                 <Route exact path='/editoffer/:_id' render={(props)=><EditOffer _id={props.match.params._id}/>} />
+
 
         </div> );
     }

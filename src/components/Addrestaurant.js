@@ -5,7 +5,7 @@ import axios from 'axios'
 class Addrestaurant extends Component {
     constructor(props) {
         super(props);
-        this.state = { name:'',
+        this.state = { name:"",
                        image:'',
                        lieu:'',
                     link:'',

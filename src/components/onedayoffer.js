@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 import './App.css'
 import Onedayitem from './onedayitem';
-
+import axios from 'axios'
 
 class Onedayoffer extends Component {
   constructor(props) {
@@ -14,32 +14,9 @@ class Onedayoffer extends Component {
         date:''
         }
   }
-   
-
-  
-  //  Datediff =() => {
-  //   let n = new Date();
-  //   let d = n.getTime();
-  //   let date= this.state.date.getTime()
-  
-  //   if (date < d )
-  //   this.setState ({
-  //  price:'EXPIR',
-  //   val:'price free',
-  //     }) }
-  
-
-      
-
-              // componentDidMount=()=>
-
-              // {
-              //     this.setState({
-              //         ...this.props.offers.filter(el=>el._id===this.props._id)[0]
-              //     })
-              // }
-
-
+  componentDidMount=()=>{
+    axios.get('/get-offer').then((res)=>this.props.updateContactReducer(res.data))
+} 
 
   render() { 
       const {offers}=this.props
@@ -93,6 +70,12 @@ const mapDispatchToProps=(dispatch)=>
                  valid
              })
 
+         } , updateContactReducer:offers=>
+         {
+             dispatch({
+                 type:'UPDATE_OFFER',
+                 offers
+             })
          }
      }
 }

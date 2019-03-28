@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-class RestaurantAdmin extends Component {
+class OfferAdmin extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -8,12 +8,12 @@ class RestaurantAdmin extends Component {
     render() { 
         return ( <div className="bgadmin">
         <div className='home-container'>
-                 <center><h2>restaurant</h2><br/><br/><br/><br/><br/>
+                 <center><h2>Offers</h2><br/><br/><br/><br/><br/>
                  <Link to='/restaurantlist'>
-                 <button className="btn">restaurant List</button>
+                 <button className="btn">offers List</button>
                  </Link>
                  <Link to='/addrestaurant'>
-                 <button className="btn">Add restaurant</button>
+                 <button className="btn">Add offer</button>
                  </Link></center>
      
         </div>
@@ -22,4 +22,4 @@ class RestaurantAdmin extends Component {
     
 }
  
-export default RestaurantAdmin;
+export default OfferAdmin;

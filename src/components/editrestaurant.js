@@ -5,7 +5,7 @@ import axios from 'axios'
 class Editrestaurant extends Component {
     constructor(props) {
         super(props);
-        this.state = { name:'',
+        this.state = { name:"",
                        image:'',
                        lieu:'',
                     link:'' ,
@@ -54,7 +54,7 @@ class Editrestaurant extends Component {
         <input type='text' name='link'  value={this.state.link}  onChange={this.handleChange}/>
         <h5>paragraphe</h5>
         <input type='text' name='paragraphe'  value={this.state.paragraphe}  onChange={this.handleChange}/><br/>
-        <Link to='/restaurantlist'>
+        <Link to='/morelist'>
         <br/><br/><button className="btn" onClick={this.editContact}>Edit restaurant</button>
         </Link>
         </center>

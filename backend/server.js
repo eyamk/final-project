@@ -20,7 +20,7 @@ app.post('/add-contact',(req,res)=>{
         else res.send(data)
     })
 })
-//get contact
+//get restaurant
 app.get('/get-contact',(req,res)=>{
 
 db.collection('restaurants').find().toArray((err,data)=>{
@@ -28,7 +28,9 @@ db.collection('restaurants').find().toArray((err,data)=>{
     else res.send(data)
 })   
 })
-//remove contact
+
+
+//remove restaurant
 app.delete('/delete-contact/:id',(req,res)=>{
     let id=ObjectID(req.params.id)
     db.collection('restaurants').findOneAndDelete({_id:id},(err,data)=>{
@@ -36,8 +38,8 @@ app.delete('/delete-contact/:id',(req,res)=>{
         else res.send(data)
     })
 })
-//edit contact
-app.put('/editcontact/:id',(req,res)=>{
+//edit restaurant
+app.put('/edit-contact/:id',(req,res)=>{
     let id=ObjectID(req.params.id)
     let updated=req.body
 db.collection('restaurants').findOneAndUpdate({_id:id},{$set:{...updated}},(err,data)=>{
@@ -46,12 +48,61 @@ db.collection('restaurants').findOneAndUpdate({_id:id},{$set:{...updated}},(err,
 })
 })
 
+
+//offer
+
+
+//add offer
+app.post('/add-offer',(req,res)=>{
+    let newoffers=req.body
+    db.collection('offers').insertOne(newoffers,(err,data)=>{
+        if(err) res.send('cant not add contact')
+        else res.send(data)
+    })
+})
+//get offer
+app.get('/get-offer',(req,res)=>{
+
+db.collection('offers').find().toArray((err,data)=>{
+     if(err) res.send('can not get contact')
+    else res.send(data)
+})   
+})
+
+
+//remove offer
+app.delete('/delete-offer/:id',(req,res)=>{
+    let id=ObjectID(req.params.id)
+    db.collection('offers').findOneAndDelete({_id:id},(err,data)=>{
+        if (err) res.send('can not delete contact')
+        else res.send(data)
+    })
+})
+//edit offer
+app.put('/edit-offer/:id',(req,res)=>{
+    let id=ObjectID(req.params.id)
+    let updateoffers=req.body
+db.collection('offers').findOneAndUpdate({_id:id},{$set:{...updateoffers}},(err,data)=>{
+    if(err) res.send('can not edit the contacts')
+    else res.send (data)
+})
 })
 
 
 
 
-app.listen(3055,(err)=>{
+
+
+
+
+
+
+})
+
+
+
+
+app.listen(3050,(err)=>{
 assert.equal(null,err,'server not running')
-console.log('the server is running on port 3055')
+console.log('the server is running on port 3050')
 })

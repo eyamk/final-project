@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import { Container, Row, Col } from 'react-grid-system';
 import Restaurantitembox from './restaurantitembox'
 import Header from './header'
-
+import axios from 'axios'
 
 import './App.css'
 
@@ -22,9 +22,17 @@ class Restaurantlistbox extends Component {
       this.setState({
           keyword:event.target.value
       });
-      this.props.searchReducer(this.state.keyword)
-      
+
+     axios.get('/get-contact').then(() =>this.props.searchReducer(this.state.keyword))
+     .catch((err)=>alert(err))
   }
+
+
+
+  componentDidMount=()=>{
+    axios.get('/get-contact').then((res)=>this.props.updateContactReducer(res.data))
+}
+
     render() { 
         
         const {list}=this.props
@@ -91,6 +99,13 @@ const mapStateToProps=(state)=>
             keyword})
 
 
+         }
+         , updateContactReducer:listinitial=>
+         {
+             dispatch({
+                 type:'UPDATE_RESTAURANT',
+                 listinitial
+             })
          }
      }
 }

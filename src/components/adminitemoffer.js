@@ -26,12 +26,12 @@ class Adminitemoffer extends Component {
             <div className="input-box">
             <input type='text' name='name' value={item.rest} />
 
-              {/* <p>{item.rest} </p> */}
+              
             </div> 
     </Col>
     <Col sm={2}>
     <div className="input-box">
-              {/* <p>{item.im}</p> */}
+          
               <input type='text' name='name' value={item.im} />
 
 
@@ -39,7 +39,7 @@ class Adminitemoffer extends Component {
     </Col>
     <Col sm={2}>
     <div className="input-box">
-              {/* <p>{item.date}</p> */}
+        
               <input type='text' name='name' value={item.date} />
 
 
@@ -47,16 +47,15 @@ class Adminitemoffer extends Component {
    </Col>
    <Col sm={2}>
    <div className="input-box">
-              {/* <p>{item.price}</p> */}
+            
               <input type='text' name='name' value={item.price} />
-
 
             </div> 
            
     </Col> 
     <Col sm={2}>
     <div className="input-box">
-              {/* <p>{item.val}</p> */}
+      
               <input type='text' name='name' value={item.val} />
 
             </div> 
